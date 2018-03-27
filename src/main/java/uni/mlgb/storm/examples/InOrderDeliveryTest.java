@@ -76,6 +76,9 @@ public class InOrderDeliveryTest {
   }
 
   public static class Check extends BaseBasicBolt {
+    /**
+     * key: task index, value: count.
+     */
     Map<Integer, Integer> expected = new HashMap<Integer, Integer>();
 
     @Override
